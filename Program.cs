@@ -1,5 +1,5 @@
 ﻿ahorcado();
-static string ahorcado() 
+static void ahorcado() 
 {
     Console.WriteLine("Bienvenido al juego del ahorcado!");
     Console.WriteLine("Ingresa la palabra");
@@ -17,37 +17,50 @@ static string ahorcado()
     }
     Console.WriteLine(palabra_oculta);
     int largo = arreglo_palabra.Length;
+    List<string> lista = new List<string>();
     while (bandera_errores >= 0 && bandera_errores < 5 && bandera_ganador == 0)
     {
         bandera_norepeat = false;
         Console.WriteLine("Escribe una letra que creas que pertenece a la palabra");
         string letra = Console.ReadLine().ToLower();
         char[] letra_palabra = letra.ToCharArray();
-        for (int i = 0; i < largo; i++)
-        {  
-            if (arreglo_palabra[i] == letra_palabra[0])
-            {
-                Console.WriteLine("Felicidades, acertaste una letra");
-                palabra_oculta = palabra_oculta.Remove(i, 1).Insert(i, letra.Substring(0, 1));
-                Console.WriteLine(String.Join(" ", palabra_oculta));
-                bandera_correctas++;
-                bandera_norepeat = true;
-            }       
-        }
-        if (bandera_norepeat == false){
-            Console.WriteLine("Lo siento, no pertenece a la palabra te quedan " + bandera_incorrectas + " intentos");
+        if (lista.Contains(letra))
+        {
+            Console.WriteLine("Ya has escrito esa letra, te quedan: " + bandera_incorrectas + " intentos");
             bandera_errores++;
-            bandera_incorrectas --;
-            if (bandera_incorrectas == -1){
-                Console.WriteLine("Lo siento, perdiste. \n No pudiste adivinar la palabra: " + palabra);
+            bandera_incorrectas--;
+        }
+        else
+        {
+            for (int i = 0; i < largo; i++)
+            {  
+                if (arreglo_palabra[i] == letra_palabra[0])
+                {
+                    Console.WriteLine("Felicidades, acertaste una letra");
+                    palabra_oculta = palabra_oculta.Remove(i, 1).Insert(i, letra.Substring(0, 1));
+                    Console.WriteLine(String.Join(" ", palabra_oculta));
+                    bandera_correctas++;
+                    bandera_norepeat = true;
+                    lista.Add(letra);
+                }       
             }
-        }
-        if (bandera_correctas == largo)
-        {   
-            Console.WriteLine("Felicidades, lograste adivinar la palabra");
-            Console.WriteLine(String.Join(" ", palabra));
-            bandera_ganador++;
-        }
+            if (bandera_norepeat == false)
+            {
+                Console.WriteLine("Lo siento, no pertenece a la palabra te quedan: " + bandera_incorrectas + " intentos");
+                bandera_errores++;
+                bandera_incorrectas --;
+                if (bandera_incorrectas == -1)
+                {
+                    Console.WriteLine("Lo siento, perdiste. \n No pudiste adivinar la palabra: " + palabra);
+                }
+            }
+            if (bandera_correctas == largo)
+            {   
+                Console.WriteLine("Felicidades, lograste adivinar la palabra");
+                Console.WriteLine(String.Join(" ", palabra));
+                bandera_ganador++;
+            }
+        }    
     } 
-    return "Creado por: Eder Joel Calzada Espinosa";  
+    Console.WriteLine("Creado por: Semi-ing. Eder Joel Calzada Espinosa");  
 }
