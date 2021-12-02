@@ -1,0 +1,15 @@
+C:\Users\unexpected\Desktop\ahorcado\ahorcado\bin\Debug\net6.0\ahorcado.exe
+C:\Users\unexpected\Desktop\ahorcado\ahorcado\bin\Debug\net6.0\ahorcado.deps.json
+C:\Users\unexpected\Desktop\ahorcado\ahorcado\bin\Debug\net6.0\ahorcado.runtimeconfig.json
+C:\Users\unexpected\Desktop\ahorcado\ahorcado\bin\Debug\net6.0\ahorcado.dll
+C:\Users\unexpected\Desktop\ahorcado\ahorcado\bin\Debug\net6.0\ref\ahorcado.dll
+C:\Users\unexpected\Desktop\ahorcado\ahorcado\bin\Debug\net6.0\ahorcado.pdb
+C:\Users\unexpected\Desktop\ahorcado\ahorcado\obj\Debug\net6.0\ahorcado.csproj.AssemblyReference.cache
+C:\Users\unexpected\Desktop\ahorcado\ahorcado\obj\Debug\net6.0\ahorcado.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\unexpected\Desktop\ahorcado\ahorcado\obj\Debug\net6.0\ahorcado.AssemblyInfoInputs.cache
+C:\Users\unexpected\Desktop\ahorcado\ahorcado\obj\Debug\net6.0\ahorcado.AssemblyInfo.cs
+C:\Users\unexpected\Desktop\ahorcado\ahorcado\obj\Debug\net6.0\ahorcado.csproj.CoreCompileInputs.cache
+C:\Users\unexpected\Desktop\ahorcado\ahorcado\obj\Debug\net6.0\ahorcado.dll
+C:\Users\unexpected\Desktop\ahorcado\ahorcado\obj\Debug\net6.0\ref\ahorcado.dll
+C:\Users\unexpected\Desktop\ahorcado\ahorcado\obj\Debug\net6.0\ahorcado.pdb
+C:\Users\unexpected\Desktop\ahorcado\ahorcado\obj\Debug\net6.0\ahorcado.genruntimeconfig.cache
